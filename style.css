@@ -1,7 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  /*
   background-color: #362b3e;
+  */
+  background-color: #472b4f;
   color: white;
 }
 header {
@@ -12,6 +15,12 @@ header {
   border-radius: 0 0 30px 30px;
 
   box-shadow: 2px 2px 2px 2px;
+
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+header:hover {
+  transform: scaleY(1.05);
 }
 section {
   padding: 40px;
@@ -30,4 +39,9 @@ section {
   background: linear-gradient(45deg, #0ff, #f0f) border-box;
 
   box-shadow: 2px 2px 2px 2px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tripBox:hover {
+  transform: scale(1.05);
 }
